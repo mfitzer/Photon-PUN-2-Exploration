@@ -44,6 +44,15 @@ namespace mfitzer.Interactions
 
         private void Start()
         {
+            if (!eventSystem) //EventSystem not set
+            {
+                eventSystem = FindObjectOfType<EventSystem>();
+                if (!eventSystem) //No EventSystem in scene, create one
+                {
+                    eventSystem = new GameObject("EventSystem").AddComponent<EventSystem>();
+                }
+            }
+
             getReferences();
             configure();
         }
@@ -55,12 +64,6 @@ namespace mfitzer.Interactions
             if (!xrGraphicRaycaster)
                 xrGraphicRaycaster = GetComponent<TrackedDeviceGraphicRaycaster>();
 
-            if (!eventSystem)
-            {
-                eventSystem = FindObjectOfType<EventSystem>();
-                if (!eventSystem)
-                    Debug.LogError("There is no EventSystem in the scene. An EventSystem is required for UI interactions to function properly.");
-            }
             if (eventSystem && !uiInputModule)
             {
                 uiInputModule = eventSystem.GetComponent<InputSystemUIInputModule>();
@@ -69,7 +72,7 @@ namespace mfitzer.Interactions
             }
             if (eventSystem && !xrUIInputModule)
             {
-                xrUIInputModule = GetComponent<XRUIInputModule>();
+                xrUIInputModule = eventSystem.GetComponent<XRUIInputModule>();
                 if (!xrUIInputModule)
                     xrUIInputModule = eventSystem.gameObject.AddComponent<XRUIInputModule>();
             }

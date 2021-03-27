@@ -3,6 +3,7 @@ using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace mfitzer.Networking
 {
@@ -18,6 +19,8 @@ namespace mfitzer.Networking
 
         [SerializeField]
         private GameObject connectionProgressLabel;
+
+        private bool isConnecting = false;
 
         private void Awake()
         {
@@ -45,7 +48,7 @@ namespace mfitzer.Networking
             }
             else //Not connected, connect to Photon server
             {
-                PhotonNetwork.ConnectUsingSettings();
+                isConnecting = PhotonNetwork.ConnectUsingSettings();
                 PhotonNetwork.GameVersion = gameVersion;
             }
         }
@@ -53,13 +56,19 @@ namespace mfitzer.Networking
         public override void OnConnectedToMaster()
         {
             Debug.Log("Connected to master");
-            PhotonNetwork.JoinRandomRoom();
+
+            //This prevents a room from being rejoined when this callback is called after the user leaves a room and returns to the lobby
+            if (isConnecting)
+            {
+                PhotonNetwork.JoinRandomRoom();
+            }
         }
 
         public override void OnDisconnected(DisconnectCause cause)
         {
             Debug.LogWarningFormat("Disconnected from PUN. Reason {0}", cause);
             controlUI(false);
+            isConnecting = false;
         }
 
         public override void OnJoinRandomFailed(short returnCode, string message)
@@ -76,6 +85,9 @@ namespace mfitzer.Networking
         public override void OnJoinedRoom()
         {
             Debug.Log("Joined room.");
+
+            //Load next scene in build settings
+            PhotonNetwork.LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

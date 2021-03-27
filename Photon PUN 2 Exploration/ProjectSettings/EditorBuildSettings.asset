@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Launcher.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/NetworkScene.unity
+    guid: 85ddf40664efbd24f86881d129a39702
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3e1adef1583d19540a7af5b409208ba6, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b929e164f10d8334599a00c70888ce65, type: 2}
