@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wristInterface: {fileID: 5871438125711854212}
-  visibilityAngle: 60
+  visibilityAngle: 30
 --- !u!1 &5871438124337696008
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,8 +165,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1554780217706850248}
-        m_TargetAssemblyTypeName: mfitzer.Networking.GameManager, Assembly-CSharp
+      - m_Target: {fileID: 3743121475226280430}
+        m_TargetAssemblyTypeName: mfitzer.Interactions.WristInterface, Assembly-CSharp
         m_MethodName: leaveRoom
         m_Mode: 1
         m_Arguments:
@@ -279,12 +279,12 @@ MonoBehaviour:
     m_Name: Main Camera - TPD - Position
     m_Type: 0
     m_ExpectedControlType: Vector3
-    m_Id: 
+    m_Id: fa745483-3314-4450-898f-b9f4c3009a62
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 
+      m_Id: b651bc89-a81a-4403-91f0-bac80a40d4b8
       m_Path: <XRHMD>/centerEyePosition
       m_Interactions: 
       m_Processors: 
@@ -295,12 +295,12 @@ MonoBehaviour:
     m_Name: Main Camera - TPD - Rotation
     m_Type: 0
     m_ExpectedControlType: Quaternion
-    m_Id: 
+    m_Id: 744f62f4-4cb1-4492-ae60-1a99945ff139
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 
+      m_Id: fc08e09e-0b80-4946-a5b2-b74b6c46dcb6
       m_Path: <XRHMD>/centerEyeRotation
       m_Interactions: 
       m_Processors: 
@@ -426,7 +426,6 @@ GameObject:
   - component: {fileID: 5871438124836020214}
   - component: {fileID: 5871438124836020215}
   - component: {fileID: 5871438124836020213}
-  - component: {fileID: 1554780217706850248}
   - component: {fileID: 1141877192282197914}
   - component: {fileID: 5348080132357050454}
   m_Layer: 0
@@ -483,18 +482,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &1554780217706850248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5871438124836020216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27209704970a3c4ea85f0e380f68a22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1141877192282197914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,6 +1088,7 @@ GameObject:
   - component: {fileID: 5871438125711854208}
   - component: {fileID: 5871438125711854209}
   - component: {fileID: 7759314185910448725}
+  - component: {fileID: 3743121475226280430}
   m_Layer: 5
   m_Name: Wrist Interface
   m_TagString: Untagged
@@ -1224,6 +1212,18 @@ MonoBehaviour:
   eventSystem: {fileID: 0}
   uiInputModule: {fileID: 0}
   xrUIInputModule: {fileID: 0}
+--- !u!114 &3743121475226280430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5871438125711854212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7611b6d006888804787c83879db92c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5871438125769017540
 GameObject:
   m_ObjectHideFlags: 0

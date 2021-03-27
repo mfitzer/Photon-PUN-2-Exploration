@@ -17,6 +17,8 @@ namespace mfitzer.Networking
 
         private TMP_InputField inputField;
 
+        private const string defaultPlayerName = "Player";
+
         private void Start()
         {
             inputField = GetComponent<TMP_InputField>();
@@ -27,7 +29,7 @@ namespace mfitzer.Networking
 
         private void loadDefaultName()
         {
-            string defaultName = string.Empty;
+            string defaultName = defaultPlayerName;
 
             //Player has a previously set name, set as default
             if (PlayerPrefs.HasKey(playerNamePrefKey))

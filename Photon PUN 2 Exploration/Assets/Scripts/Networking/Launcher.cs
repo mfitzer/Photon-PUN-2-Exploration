@@ -22,6 +22,9 @@ namespace mfitzer.Networking
 
         private bool isConnecting = false;
 
+        [SerializeField, Tooltip("Build index of the scene to load after this scene.")]
+        private int nextSceneIndex = 1;
+
         private void Awake()
         {
             PhotonNetwork.AutomaticallySyncScene = true;
@@ -87,7 +90,7 @@ namespace mfitzer.Networking
             Debug.Log("Joined room.");
 
             //Load next scene in build settings
-            PhotonNetwork.LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+            PhotonNetwork.LoadLevel(nextSceneIndex);
         }
     }
 }
