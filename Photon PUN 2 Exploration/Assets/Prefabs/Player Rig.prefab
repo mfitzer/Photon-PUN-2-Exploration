@@ -13,6 +13,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alias: {fileID: 6425863518754188654}
+--- !u!114 &860328373493607707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600888665581047941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0469d1e8c17a32a489eb1753c10caf64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2174162074537908990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600888665581047941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea91e320d9a28d4a94ea28af3370c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftRayInteractor: {fileID: 3906377899987390597}
+  rightRayInteractor: {fileID: 6729504144562796602}
 --- !u!114 &7604094787210613247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26,6 +52,110 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alias: {fileID: 6425863520090052925}
+--- !u!114 &7872268687924491844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600888665581047941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47fe7037947ed442b2ba2c8e551bdd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActionBindings: {fileID: 11400000, guid: 5361b485f37d72542bd7d0a1f8a31c18, type: 2}
+  activateOnStart: 1
+  LeftGrab:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5801543177557218083}
+        m_TargetAssemblyTypeName: mfitzer.Interactions.Hand, Assembly-CSharp
+        m_MethodName: handleGrab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  LeftRelease:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5801543177557218083}
+        m_TargetAssemblyTypeName: mfitzer.Interactions.Hand, Assembly-CSharp
+        m_MethodName: handleRelease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  RightGrab:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4247684427138186713}
+        m_TargetAssemblyTypeName: mfitzer.Interactions.Hand, Assembly-CSharp
+        m_MethodName: handleGrab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  RightRelease:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4247684427138186713}
+        m_TargetAssemblyTypeName: mfitzer.Interactions.Hand, Assembly-CSharp
+        m_MethodName: handleRelease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ToggleLeftRayInteractor:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2174162074537908990}
+        m_TargetAssemblyTypeName: mfitzer.Interactions.RayInteractorManager, Assembly-CSharp
+        m_MethodName: toggleLeftRayInteractor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ToggleRightRayInteractor:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2174162074537908990}
+        m_TargetAssemblyTypeName: mfitzer.Interactions.RayInteractorManager, Assembly-CSharp
+        m_MethodName: toggleRightRayInteractor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5456244256981352671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,8 +194,11 @@ GameObject:
   - component: {fileID: 2039375639501443044}
   - component: {fileID: 6487708210478658923}
   - component: {fileID: 956483454271806529}
+  - component: {fileID: 3062921855188917195}
+  - component: {fileID: 4247684427138186713}
+  - component: {fileID: 7930697053750371090}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: RightHandModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,6 +280,61 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &3062921855188917195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020090294735405418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4247684427138186713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020090294735405418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8001ca12ea0f08e42a503effed4a88b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoveringGrabbable: {fileID: 0}
+  activeGrabbable: {fileID: 0}
+  onHoverStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverStop:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!54 &7930697053750371090
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020090294735405418}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1454666638887007955
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,8 +347,11 @@ GameObject:
   - component: {fileID: 4943304776239865326}
   - component: {fileID: 2005782454303422423}
   - component: {fileID: 5248100787133735045}
+  - component: {fileID: 1561076369430825330}
+  - component: {fileID: 5801543177557218083}
+  - component: {fileID: 5170347811116064268}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: LeftHandModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,6 +433,61 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &1561076369430825330
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454666638887007955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5801543177557218083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454666638887007955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8001ca12ea0f08e42a503effed4a88b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoveringGrabbable: {fileID: 0}
+  activeGrabbable: {fileID: 0}
+  onHoverStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverStop:
+    m_PersistentCalls:
+      m_Calls: []
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!54 &5170347811116064268
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454666638887007955}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1503664262335154868
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,9 +1026,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
---- !u!1 &600888665269781181 stripped
+--- !u!1 &6729504144562796602 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5871438124457643456, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
+  m_CorrespondingSourceObject: {fileID: 308849029979191111, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
   m_PrefabInstance: {fileID: 6425863518344253309}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &600888666514573241 stripped
@@ -790,9 +1036,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5871438125769017540, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
   m_PrefabInstance: {fileID: 6425863518344253309}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3906377899987390597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8006132210725969912, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
+  m_PrefabInstance: {fileID: 6425863518344253309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &600888666311624144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5871438125567117997, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
+  m_PrefabInstance: {fileID: 6425863518344253309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &600888665269781181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5871438124457643456, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
   m_PrefabInstance: {fileID: 6425863518344253309}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &600888665581047947 stripped
