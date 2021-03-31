@@ -1020,6 +1020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 5871438125711854211, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.168
+      objectReference: {fileID: 0}
     - target: {fileID: 5871438125711854212, guid: ad461a7a280136f46ab0717a62afc050, type: 3}
       propertyPath: m_IsActive
       value: 0

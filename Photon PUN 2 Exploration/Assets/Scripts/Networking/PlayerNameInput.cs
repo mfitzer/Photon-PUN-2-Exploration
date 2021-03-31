@@ -1,13 +1,10 @@
 ﻿using Photon.Pun;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace mfitzer.Networking
 {
-    [RequireComponent(typeof(TMP_InputField))]
+    [RequireComponent(typeof(InputField))]
     public class PlayerNameInput : MonoBehaviour
     {
         /// <summary>
@@ -15,13 +12,13 @@ namespace mfitzer.Networking
         /// </summary>
         private const string playerNamePrefKey = "PlayerName";
 
-        private TMP_InputField inputField;
+        private InputField inputField;
 
         private const string defaultPlayerName = "Player";
 
         private void Start()
         {
-            inputField = GetComponent<TMP_InputField>();
+            inputField = GetComponent<InputField>();
             inputField.onValueChanged.AddListener(setPlayerName);
 
             loadDefaultName();

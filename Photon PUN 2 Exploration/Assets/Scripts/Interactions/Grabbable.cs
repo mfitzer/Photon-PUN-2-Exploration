@@ -28,6 +28,17 @@ namespace mfitzer.Interactions
             get => onRelease;
         }
 
+        /// <summary>
+        /// Indicates if the grabbable is currently being grabbed.
+        /// </summary>
+        public bool grabbed
+        {
+            get
+            {
+                return grabbingHand;
+            }
+        }
+
         private void Start()
         {
             rb = GetComponent<Rigidbody>();

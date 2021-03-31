@@ -29,7 +29,8 @@ namespace mfitzer.Networking
                 //This is the local hand
                 if (photonView.IsMine && PhotonNetwork.IsConnected)
                 {
-                    if (!netGrabbable.photonView.AmOwner)
+                    //Not the owner and the grabbable is not being grabbed
+                    if (!netGrabbable.photonView.AmOwner && !netGrabbable.grabbable.grabbed)
                     {
                         //Take ownership of the grabbable
                         netGrabbable.photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
@@ -65,11 +66,6 @@ namespace mfitzer.Networking
                     //This is the local hand
                     if (photonView.IsMine && PhotonNetwork.IsConnected)
                     {
-                        if (!netGrabbable.photonView.AmOwner)
-                        {
-                            //Take ownership of the grabbable
-                            netGrabbable.photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
-                        }
                         photonView.RPC("networkHoverStop", RpcTarget.OthersBuffered, netGrabbable.photonView.ViewID);
                     }
                 }
