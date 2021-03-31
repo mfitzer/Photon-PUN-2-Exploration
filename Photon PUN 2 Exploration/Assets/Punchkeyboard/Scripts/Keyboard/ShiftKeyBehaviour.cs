@@ -1,8 +1,8 @@
-﻿using System.Collections;
+﻿using mfitzer.Interactions;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using WindowsInput;
 
 public class ShiftKeyBehaviour : MonoBehaviour
 {
@@ -42,13 +42,11 @@ public class ShiftKeyBehaviour : MonoBehaviour
 			if (shiftToggle)
 			{
 				shiftKeyController.KeycapColor = shiftKeyController.PressedKeycapColor;
-				InputSimulator.SimulateKeyPress(VirtualKeyCode.CAPITAL);
 				shiftToggle = false;
 			}
 			else if (!shiftToggle)
 			{
 				shiftKeyController.KeycapColor = shiftKeyController.InitialKeycapColor;
-				InputSimulator.SimulateKeyPress(VirtualKeyCode.CAPITAL);
 				shiftToggle = true;
 			}
 		}
@@ -73,7 +71,7 @@ public class ShiftKeyBehaviour : MonoBehaviour
 		Key.keyPressed -= ShiftKeyPressed;
 		if (!shiftToggle)
 		{
-			InputSimulator.SimulateKeyPress(VirtualKeyCode.CAPITAL);
+			Keyboard.Instance.onKeyPress(shiftKeyController.KeyCapChar);
 		}
 	}
 }

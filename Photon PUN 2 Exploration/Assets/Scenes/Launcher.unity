@@ -842,8 +842,6 @@ GameObject:
   - component: {fileID: 98073227}
   - component: {fileID: 98073226}
   - component: {fileID: 98073225}
-  - component: {fileID: 98073224}
-  - component: {fileID: 98073223}
   m_Layer: 8
   m_Name: '#AKey'
   m_TagString: Key
@@ -866,36 +864,6 @@ Transform:
   m_Father: {fileID: 250660363}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &98073223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98073221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 65
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: 3200
---- !u!114 &98073224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98073221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 65
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3200
 --- !u!114 &98073225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1293,7 +1261,6 @@ GameObject:
   - component: {fileID: 146849271}
   - component: {fileID: 146849270}
   - component: {fileID: 146849269}
-  - component: {fileID: 146849268}
   m_Layer: 8
   m_Name: '#GKey'
   m_TagString: Key
@@ -1316,21 +1283,6 @@ Transform:
   m_Father: {fileID: 2048453802}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &146849268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146849266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 71
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: bd00
 --- !u!114 &146849269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2080,7 +2032,6 @@ GameObject:
   - component: {fileID: 212820571}
   - component: {fileID: 212820570}
   - component: {fileID: 212820569}
-  - component: {fileID: 212820568}
   m_Layer: 8
   m_Name: '#CommaKey'
   m_TagString: Key
@@ -2103,21 +2054,6 @@ Transform:
   m_Father: {fileID: 581476985}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &212820568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212820566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 188
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: bc00
 --- !u!114 &212820569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2509,7 +2445,6 @@ GameObject:
   - component: {fileID: 240242383}
   - component: {fileID: 240242382}
   - component: {fileID: 240242381}
-  - component: {fileID: 240242380}
   m_Layer: 8
   m_Name: '#OKey'
   m_TagString: Key
@@ -2532,21 +2467,6 @@ Transform:
   m_Father: {fileID: 84986251}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &240242380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240242378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 79
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3900
 --- !u!114 &240242381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2690,7 +2610,6 @@ GameObject:
   - component: {fileID: 257835147}
   - component: {fileID: 257835146}
   - component: {fileID: 257835145}
-  - component: {fileID: 257835144}
   m_Layer: 8
   m_Name: '#TKey'
   m_TagString: Key
@@ -2713,21 +2632,6 @@ Transform:
   m_Father: {fileID: 1960530983}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &257835144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257835142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 84
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3500
 --- !u!114 &257835145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2920,7 +2824,6 @@ GameObject:
   - component: {fileID: 270612982}
   - component: {fileID: 270612981}
   - component: {fileID: 270612980}
-  - component: {fileID: 270612979}
   m_Layer: 8
   m_Name: '#LKey'
   m_TagString: Key
@@ -2943,21 +2846,6 @@ Transform:
   m_Father: {fileID: 1484067316}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &270612979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270612977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 76
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: bf00
 --- !u!114 &270612980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3069,7 +2957,6 @@ GameObject:
   - component: {fileID: 275100857}
   - component: {fileID: 275100856}
   - component: {fileID: 275100855}
-  - component: {fileID: 275100854}
   m_Layer: 8
   m_Name: '#BKey'
   m_TagString: Key
@@ -3092,21 +2979,6 @@ Transform:
   m_Father: {fileID: 602953312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &275100854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275100852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 66
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: ba00
 --- !u!114 &275100855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3381,7 +3253,6 @@ GameObject:
   - component: {fileID: 301621883}
   - component: {fileID: 301621882}
   - component: {fileID: 301621881}
-  - component: {fileID: 301621880}
   m_Layer: 8
   m_Name: '#VKey'
   m_TagString: Key
@@ -3404,21 +3275,6 @@ Transform:
   m_Father: {fileID: 498103676}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &301621880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301621878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 86
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: ba00
 --- !u!114 &301621881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5074,7 +4930,6 @@ GameObject:
   - component: {fileID: 468404732}
   - component: {fileID: 468404731}
   - component: {fileID: 468404730}
-  - component: {fileID: 468404729}
   m_Layer: 8
   m_Name: '#ReturnKey'
   m_TagString: Key
@@ -5097,21 +4952,6 @@ Transform:
   m_Father: {fileID: 822426528}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &468404729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468404727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 13
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 0d00
 --- !u!114 &468404730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5864,7 +5704,6 @@ GameObject:
   - component: {fileID: 567371524}
   - component: {fileID: 567371523}
   - component: {fileID: 567371522}
-  - component: {fileID: 567371521}
   m_Layer: 8
   m_Name: '#CKey'
   m_TagString: Key
@@ -5887,21 +5726,6 @@ Transform:
   m_Father: {fileID: 1499877418}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &567371521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567371519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 67
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: de00
 --- !u!114 &567371522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6395,7 +6219,6 @@ GameObject:
   - component: {fileID: 653924306}
   - component: {fileID: 653924305}
   - component: {fileID: 653924304}
-  - component: {fileID: 653924303}
   m_Layer: 8
   m_Name: '#KKey'
   m_TagString: Key
@@ -6418,21 +6241,6 @@ Transform:
   m_Father: {fileID: 1688109382}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &653924303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653924301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 75
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: 3000
 --- !u!114 &653924304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7584,7 +7392,6 @@ GameObject:
   - component: {fileID: 748065016}
   - component: {fileID: 748065015}
   - component: {fileID: 748065014}
-  - component: {fileID: 748065013}
   m_Layer: 8
   m_Name: '#XKey'
   m_TagString: Key
@@ -7607,21 +7414,6 @@ Transform:
   m_Father: {fileID: 317909614}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &748065013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748065011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 88
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: de00
 --- !u!114 &748065014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8034,7 +7826,6 @@ GameObject:
   - component: {fileID: 817944694}
   - component: {fileID: 817944693}
   - component: {fileID: 817944692}
-  - component: {fileID: 817944691}
   m_Layer: 8
   m_Name: '#ZKey'
   m_TagString: Key
@@ -8057,21 +7848,6 @@ Transform:
   m_Father: {fileID: 339393867}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &817944691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817944689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 90
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: 3800
 --- !u!114 &817944692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8386,7 +8162,6 @@ GameObject:
   - component: {fileID: 852921368}
   - component: {fileID: 852921367}
   - component: {fileID: 852921366}
-  - component: {fileID: 852921365}
   m_Layer: 8
   m_Name: '#FKey'
   m_TagString: Key
@@ -8409,21 +8184,6 @@ Transform:
   m_Father: {fileID: 1843029924}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &852921365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852921363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 70
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: bd00
 --- !u!114 &852921366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9011,7 +8771,6 @@ GameObject:
   - component: {fileID: 913712258}
   - component: {fileID: 913712257}
   - component: {fileID: 913712256}
-  - component: {fileID: 913712255}
   m_Layer: 8
   m_Name: '#JKey'
   m_TagString: Key
@@ -9034,21 +8793,6 @@ Transform:
   m_Father: {fileID: 354488555}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &913712255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913712253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 74
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: 3900
 --- !u!114 &913712256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9322,7 +9066,6 @@ GameObject:
   - component: {fileID: 962633064}
   - component: {fileID: 962633063}
   - component: {fileID: 962633062}
-  - component: {fileID: 962633061}
   m_Layer: 8
   m_Name: '#BackspaceKey'
   m_TagString: Key
@@ -9345,21 +9088,6 @@ Transform:
   m_Father: {fileID: 637021870}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &962633061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962633059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 8
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 0800
 --- !u!114 &962633062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9960,7 +9688,6 @@ GameObject:
   - component: {fileID: 1045638358}
   - component: {fileID: 1045638357}
   - component: {fileID: 1045638356}
-  - component: {fileID: 1045638355}
   m_Layer: 8
   m_Name: '#EKey'
   m_TagString: Key
@@ -9983,21 +9710,6 @@ Transform:
   m_Father: {fileID: 1136433643}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1045638355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045638353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 69
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3300
 --- !u!114 &1045638356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10813,7 +10525,6 @@ GameObject:
   - component: {fileID: 1119658547}
   - component: {fileID: 1119658546}
   - component: {fileID: 1119658545}
-  - component: {fileID: 1119658544}
   m_Layer: 8
   m_Name: '#MKey'
   m_TagString: Key
@@ -10836,21 +10547,6 @@ Transform:
   m_Father: {fileID: 2062952666}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1119658544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119658542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 77
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: bf00
 --- !u!114 &1119658545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11077,7 +10773,6 @@ GameObject:
   - component: {fileID: 1138333623}
   - component: {fileID: 1138333622}
   - component: {fileID: 1138333621}
-  - component: {fileID: 1138333620}
   m_Layer: 8
   m_Name: '#UKey'
   m_TagString: Key
@@ -11100,21 +10795,6 @@ Transform:
   m_Father: {fileID: 1043203376}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1138333620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138333618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 85
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3700
 --- !u!114 &1138333621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11629,7 +11309,6 @@ GameObject:
   - component: {fileID: 1213922899}
   - component: {fileID: 1213922898}
   - component: {fileID: 1213922897}
-  - component: {fileID: 1213922896}
   m_Layer: 8
   m_Name: '#RKey'
   m_TagString: Key
@@ -11652,21 +11331,6 @@ Transform:
   m_Father: {fileID: 1188058210}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1213922896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213922894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 82
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3400
 --- !u!114 &1213922897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12037,7 +11701,6 @@ GameObject:
   - component: {fileID: 1245875687}
   - component: {fileID: 1245875686}
   - component: {fileID: 1245875685}
-  - component: {fileID: 1245875684}
   m_Layer: 8
   m_Name: '#QKey'
   m_TagString: Key
@@ -12060,21 +11723,6 @@ Transform:
   m_Father: {fileID: 1325508765}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1245875684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1245875682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 81
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3100
 --- !u!114 &1245875685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12402,7 +12050,6 @@ GameObject:
   - component: {fileID: 1259395006}
   - component: {fileID: 1259395005}
   - component: {fileID: 1259395004}
-  - component: {fileID: 1259395003}
   m_Layer: 8
   m_Name: '#SymbolKey'
   m_TagString: Key
@@ -12425,21 +12072,6 @@ Transform:
   m_Father: {fileID: 1289830697}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1259395003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259395001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 0
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 
 --- !u!114 &1259395004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12465,7 +12097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a940d2711773d6a488f2656714f9c2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyCapChar: '@'
+  KeyCapChar: '!#1'
   AlterateKeyCapChar: ABC
   Rigidbody: {fileID: 0}
   KeyPressed: 0
@@ -12564,7 +12196,6 @@ GameObject:
   - component: {fileID: 1273564613}
   - component: {fileID: 1273564612}
   - component: {fileID: 1273564611}
-  - component: {fileID: 1273564610}
   m_Layer: 8
   m_Name: '#WKey'
   m_TagString: Key
@@ -12587,21 +12218,6 @@ Transform:
   m_Father: {fileID: 1227969860}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1273564610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273564608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 87
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3200
 --- !u!114 &1273564611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12992,7 +12608,6 @@ GameObject:
   - component: {fileID: 1336967229}
   - component: {fileID: 1336967228}
   - component: {fileID: 1336967227}
-  - component: {fileID: 1336967226}
   m_Layer: 8
   m_Name: '#NKey'
   m_TagString: Key
@@ -13015,21 +12630,6 @@ Transform:
   m_Father: {fileID: 1579897359}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1336967226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336967224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 78
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: 3100
 --- !u!114 &1336967227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13852,6 +13452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485961210}
   - component: {fileID: 1485961209}
+  - component: {fileID: 1485961211}
   m_Layer: 0
   m_Name: Punchkeyboard
   m_TagString: Untagged
@@ -13887,6 +13488,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1485961211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485961208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454cf99c7e692924e8a142e6e095da33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 1389231460}
+  eventSystem: {fileID: 1014983660}
 --- !u!1 &1488065562
 GameObject:
   m_ObjectHideFlags: 0
@@ -14493,7 +14108,6 @@ GameObject:
   - component: {fileID: 1599237266}
   - component: {fileID: 1599237265}
   - component: {fileID: 1599237264}
-  - component: {fileID: 1599237263}
   m_Layer: 8
   m_Name: '#SpaceKey'
   m_TagString: Key
@@ -14516,21 +14130,6 @@ Transform:
   m_Father: {fileID: 787656489}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1599237263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599237261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 32
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 2000
 --- !u!114 &1599237264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14954,7 +14553,6 @@ GameObject:
   - component: {fileID: 1628175475}
   - component: {fileID: 1628175474}
   - component: {fileID: 1628175473}
-  - component: {fileID: 1628175472}
   m_Layer: 8
   m_Name: '#SKey'
   m_TagString: Key
@@ -14977,21 +14575,6 @@ Transform:
   m_Father: {fileID: 497269335}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1628175472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1628175470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 83
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: 3300
 --- !u!114 &1628175473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15103,7 +14686,6 @@ GameObject:
   - component: {fileID: 1679059044}
   - component: {fileID: 1679059043}
   - component: {fileID: 1679059042}
-  - component: {fileID: 1679059041}
   m_Layer: 8
   m_Name: '#DKey'
   m_TagString: Key
@@ -15126,21 +14708,6 @@ Transform:
   m_Father: {fileID: 1600352787}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1679059041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679059039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 68
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: 3400
 --- !u!114 &1679059042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15285,7 +14852,6 @@ GameObject:
   - component: {fileID: 1688181220}
   - component: {fileID: 1688181219}
   - component: {fileID: 1688181217}
-  - component: {fileID: 1688181218}
   m_Layer: 8
   m_Name: '#ShiftKey'
   m_TagString: Key
@@ -15306,21 +14872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Housing: {fileID: 1250763983}
---- !u!114 &1688181218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688181216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 0
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 
 --- !u!114 &1688181219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15543,7 +15094,6 @@ GameObject:
   - component: {fileID: 1695262206}
   - component: {fileID: 1695262205}
   - component: {fileID: 1695262204}
-  - component: {fileID: 1695262203}
   m_Layer: 8
   m_Name: '#YKey'
   m_TagString: Key
@@ -15566,21 +15116,6 @@ Transform:
   m_Father: {fileID: 963111887}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1695262203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695262201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 89
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3600
 --- !u!114 &1695262204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15692,7 +15227,6 @@ GameObject:
   - component: {fileID: 1701756494}
   - component: {fileID: 1701756493}
   - component: {fileID: 1701756492}
-  - component: {fileID: 1701756491}
   m_Layer: 8
   m_Name: '#IKey'
   m_TagString: Key
@@ -15715,21 +15249,6 @@ Transform:
   m_Father: {fileID: 1620030289}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1701756491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701756489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 73
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3800
 --- !u!114 &1701756492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16281,7 +15800,6 @@ GameObject:
   - component: {fileID: 1774255563}
   - component: {fileID: 1774255562}
   - component: {fileID: 1774255561}
-  - component: {fileID: 1774255560}
   m_Layer: 8
   m_Name: '#PKey'
   m_TagString: Key
@@ -16304,21 +15822,6 @@ Transform:
   m_Father: {fileID: 1387102898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1774255560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774255558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 80
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: 3000
 --- !u!114 &1774255561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17250,7 +16753,6 @@ GameObject:
   - component: {fileID: 1990440078}
   - component: {fileID: 1990440077}
   - component: {fileID: 1990440076}
-  - component: {fileID: 1990440075}
   m_Layer: 8
   m_Name: '#HKey'
   m_TagString: Key
@@ -17273,21 +16775,6 @@ Transform:
   m_Father: {fileID: 1199096400}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1990440075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990440073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 72
-  KeyKeycodeModifier: 16
-  AlternateKeyKeycode: bb00
 --- !u!114 &1990440076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18123,7 +17610,6 @@ GameObject:
   - component: {fileID: 2141283142}
   - component: {fileID: 2141283141}
   - component: {fileID: 2141283140}
-  - component: {fileID: 2141283139}
   m_Layer: 8
   m_Name: '#PeriodKey'
   m_TagString: Key
@@ -18146,21 +17632,6 @@ Transform:
   m_Father: {fileID: 1865294018}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2141283139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141283137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f773a137891fbbf43a2e2ddb891d7b9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyKeycode: 190
-  KeyKeycodeModifier: 0
-  AlternateKeyKeycode: be00
 --- !u!114 &2141283140
 MonoBehaviour:
   m_ObjectHideFlags: 0

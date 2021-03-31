@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using mfitzer.Interactions;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +16,7 @@ public class Key : MonoBehaviour
 	public Color InitialKeycapColor;
 
 	protected Transform initialPosition;
-	private KeycodeAdder keycodeAdder;
+	//private KeycodeAdder keycodeAdder;
 	private Text keyCapText;
 	private Vector3 initialLocalPosition;
 	private Quaternion initialLocalRotation;
@@ -31,7 +32,7 @@ public class Key : MonoBehaviour
 
 	void Start()
 	{
-		keycodeAdder = this.gameObject.GetComponent<KeycodeAdder> ();
+		//keycodeAdder = this.gameObject.GetComponent<KeycodeAdder> ();
 
 		keyCapText = this.gameObject.GetComponentInChildren<Text> ();
 		KeycapColor = this.gameObject.GetComponent<Renderer> ().material.color;
@@ -77,11 +78,13 @@ public class Key : MonoBehaviour
 				keyPressed?.Invoke();
 				if (symbolSwitch)
 				{
-					keycodeAdder.SimulateAlternateKeyPress ();
+					//keycodeAdder.SimulateAlternateKeyPress ();
+					Keyboard.Instance.onKeyPress(AlterateKeyCapChar);
 				}
 				else
 				{
-					keycodeAdder.SimulateKeyPress ();
+					//keycodeAdder.SimulateKeyPress ();
+					Keyboard.Instance.onKeyPress(KeyCapChar);
 				}
 				keySoundController.StartKeySound (this.gameObject.transform);
 				checkForButton = false;
