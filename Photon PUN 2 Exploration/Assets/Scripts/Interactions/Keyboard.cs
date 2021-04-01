@@ -88,7 +88,9 @@ namespace mfitzer.Interactions
         {
             Debug.Log("Back key press");
 
-            setInputFieldText(inputField.text.Remove(inputField.text.Length - 1));
+            //Input field is not empty, delete last char
+            if (inputField.text.Length > 0)
+                setInputFieldText(inputField.text.Remove(inputField.text.Length - 1));
         }
 
         private void setInputFieldText(string text)

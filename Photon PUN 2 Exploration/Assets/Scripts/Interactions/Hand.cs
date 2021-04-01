@@ -45,8 +45,6 @@ namespace mfitzer.Interactions
 
         private bool grabbing { get => activeGrabbable; }
 
-        private bool grabActionActivated = false;
-
         private void OnTriggerEnter(Collider other)
         {
             Grabbable grabbable = other.GetComponent<Grabbable>();
@@ -78,16 +76,19 @@ namespace mfitzer.Interactions
 
         public void grab(Grabbable grabbable)
         {
-            Debug.Log("Grab " + grabbable.name);
+            if (grabbable && grabbable != activeGrabbable)
+            {
+                Debug.Log("Grab " + grabbable.name);
 
-            if (activeGrabbable)
-                activeGrabbable.processRelease(this);
+                if (activeGrabbable)
+                    activeGrabbable.processRelease(this);
 
-            activeGrabbable = grabbable;
-            hoveringGrabbable = null;
-            activeGrabbable.processGrab(this);
+                activeGrabbable = grabbable;
+                hoveringGrabbable = null;
+                activeGrabbable.processGrab(this);
 
-            onGrab.Invoke(activeGrabbable);
+                onGrab.Invoke(activeGrabbable);
+            }
         }
 
         /// <summary>
@@ -101,7 +102,7 @@ namespace mfitzer.Interactions
 
         public void release(Grabbable grabbable)
         {
-            if (grabbable)
+            if (grabbable && grabbable == activeGrabbable)
             {
                 Debug.Log("Release " + grabbable.name);
 

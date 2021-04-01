@@ -1,5 +1,6 @@
 ﻿using Photon.Pun;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace mfitzer.Networking
@@ -15,6 +16,12 @@ namespace mfitzer.Networking
         private InputField inputField;
 
         private const string defaultPlayerName = "Player";
+
+        [SerializeField]
+        private UnityEvent onValidPlayerNameSet;
+
+        [SerializeField]
+        private UnityEvent onInvalidPlayerNameSet;
 
         private void Start()
         {
@@ -35,19 +42,29 @@ namespace mfitzer.Networking
                 inputField.text = defaultName;
             }
 
-            PhotonNetwork.NickName = defaultName;
+            setPlayerName(defaultName);
+        }
+
+        private bool isPlayerNameValid(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                onInvalidPlayerNameSet.Invoke();
+                PlayerPrefs.SetString(playerNamePrefKey, "");
+                return false;
+            }
+
+            onValidPlayerNameSet.Invoke();
+            return true;
         }
 
         private void setPlayerName(string value)
         {
-            if (string.IsNullOrEmpty(value))
+            if (isPlayerNameValid(value))
             {
-                Debug.LogError("Player name is null or empty.");
-                return;
+                PhotonNetwork.NickName = value;
+                PlayerPrefs.SetString(playerNamePrefKey, value);
             }
-
-            PhotonNetwork.NickName = value;
-            PlayerPrefs.SetString(playerNamePrefKey, value);
         }
     }
 }

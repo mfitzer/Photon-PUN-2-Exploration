@@ -47,24 +47,29 @@ namespace mfitzer.Interactions
 
         public void processGrab(Hand hand)
         {
-            Debug.Log("[" + name + "] Processing grab from hand: " + hand.name);
+            //Not currently being grabbed by hand
+            if (hand && hand != grabbingHand)
+            {
+                Debug.Log("[" + name + "] Processing grab from hand: " + hand.name);
 
-            if (grabbingHand)
-                grabbingHand.handleRelease();
+                if (grabbed) //Force grabbing hand to release
+                    grabbingHand.handleRelease();
 
-            grabbingHand = hand;
-            rb.isKinematic = true;
-            transform.parent = grabbingHand.transform;
+                grabbingHand = hand;
+                rb.isKinematic = true;
+                transform.parent = grabbingHand.transform;
 
-            OnGrab.Invoke(hand);
+                OnGrab.Invoke(hand);
+            }
         }
 
         public void processRelease(Hand hand)
         {
-            Debug.Log("[" + name + "] Processing release from hand: " + hand.name);
-
-            if (grabbingHand)
+            //Currently being grabbed by hand
+            if (hand && hand == grabbingHand)
             {
+                Debug.Log("[" + name + "] Processing release from hand: " + hand.name);
+
                 grabbingHand = null;
                 rb.isKinematic = false;
                 transform.parent = initParent;

@@ -1,7 +1,5 @@
 ﻿using mfitzer.Interactions;
 using Photon.Pun;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace mfitzer.Networking
@@ -9,12 +7,19 @@ namespace mfitzer.Networking
     [RequireComponent(typeof(Hand))]
     public class NetworkHand : MonoBehaviourPun
     {
-        public Hand hand { get; private set; }
+        private Hand _hand;
+        public Hand hand
+        {
+            get
+            {
+                if (!_hand)
+                    _hand = GetComponent<Hand>();
+                return _hand;
+            }
+        }
 
         private void Start()
         {
-            hand = GetComponent<Hand>();
-
             hand.OnHoverStart.AddListener(onHoverStart);
             hand.OnHoverStop.AddListener(onHoverStop);
             hand.OnGrab.AddListener(onGrab);
@@ -23,11 +28,11 @@ namespace mfitzer.Networking
 
         private void onHoverStart(Grabbable grabbable)
         {
-            NetworkGrabbable netGrabbable = grabbable.GetComponent<NetworkGrabbable>();
-            if (netGrabbable) //Grabbable is networked
+            //This is the local hand
+            if (photonView.IsMine && PhotonNetwork.IsConnected)
             {
-                //This is the local hand
-                if (photonView.IsMine && PhotonNetwork.IsConnected)
+                NetworkGrabbable netGrabbable = grabbable.GetComponent<NetworkGrabbable>();
+                if (netGrabbable) //Grabbable is networked
                 {
                     //Not the owner and the grabbable is not being grabbed
                     if (!netGrabbable.photonView.AmOwner && !netGrabbable.grabbable.grabbed)
@@ -35,7 +40,7 @@ namespace mfitzer.Networking
                         //Take ownership of the grabbable
                         netGrabbable.photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
                     }
-                    
+
                     photonView.RPC("networkHoverStart", RpcTarget.OthersBuffered, netGrabbable.photonView.ViewID);
                 }
             }
@@ -57,17 +62,13 @@ namespace mfitzer.Networking
 
         private void onHoverStop(Grabbable grabbable)
         {
-            NetworkGrabbable netGrabbable = grabbable.GetComponent<NetworkGrabbable>();
-            if (netGrabbable) //Grabbable is networked
+            //This is the local hand
+            if (photonView.IsMine && PhotonNetwork.IsConnected)
             {
-                //This is the local hand
-                if (photonView.IsMine && PhotonNetwork.IsConnected)
+                NetworkGrabbable netGrabbable = grabbable.GetComponent<NetworkGrabbable>();
+                if (netGrabbable) //Grabbable is networked
                 {
-                    //This is the local hand
-                    if (photonView.IsMine && PhotonNetwork.IsConnected)
-                    {
-                        photonView.RPC("networkHoverStop", RpcTarget.OthersBuffered, netGrabbable.photonView.ViewID);
-                    }
+                    photonView.RPC("networkHoverStop", RpcTarget.OthersBuffered, netGrabbable.photonView.ViewID);
                 }
             }
         }
@@ -88,11 +89,11 @@ namespace mfitzer.Networking
 
         private void onGrab(Grabbable grabbable)
         {
-            NetworkGrabbable netGrabbable = grabbable.GetComponent<NetworkGrabbable>();
-            if (netGrabbable) //Grabbable is networked
+            //This is the local hand
+            if (photonView.IsMine && PhotonNetwork.IsConnected)
             {
-                //This is the local hand
-                if (photonView.IsMine && PhotonNetwork.IsConnected)
+                NetworkGrabbable netGrabbable = grabbable.GetComponent<NetworkGrabbable>();
+                if (netGrabbable) //Grabbable is networked
                 {
                     //Take ownership of the grabbable
                     netGrabbable.photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
@@ -121,11 +122,11 @@ namespace mfitzer.Networking
 
         private void onRelease(Grabbable grabbable)
         {
-            NetworkGrabbable netGrabbable = grabbable.GetComponent<NetworkGrabbable>();
-            if (netGrabbable) //Grabbable is networked
+            //This is the local hand
+            if (photonView.IsMine && PhotonNetwork.IsConnected)
             {
-                //This is the local hand
-                if (photonView.IsMine && PhotonNetwork.IsConnected)
+                NetworkGrabbable netGrabbable = grabbable.GetComponent<NetworkGrabbable>();
+                if (netGrabbable) //Grabbable is networked
                 {
                     photonView.RPC("networkRelease", RpcTarget.OthersBuffered, netGrabbable.photonView.ViewID);
                 }
